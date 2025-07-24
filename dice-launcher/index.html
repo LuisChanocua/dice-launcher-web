@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="title" content="Lanzador de Dados 🎲 | Home">
+    <meta name="description"
+        content="Lanza dados de forma aleatoria y divertida desde tu navegador. Selecciona cuántos dados lanzar y guarda tu historial. ¡Ideal para juegos, sorteos o rol!">
+    <meta name="author" content="Luis Esteban">
+    <meta name="keywords"
+        content="dados, lanzar dados, app dados, generador aleatorio, juego de mesa, rol, juegos online, dados digitales">
+
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <meta property="og:image" content="share.webp" />
+
+
+    <title>Lanzador de Dados 🎲 | Home</title>
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Lanzador de Dados 🎲</h1>
+
+        <label for="cantidad">Cantidad de dados:</label>
+        <select id="cantidad">
+            <option value="1">1</option>
+            <option value="2" selected>2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <button id="btnLanzar">Lanzar Dados</button>
+
+        <div id="resultado">🎲 🎲</div>
+
+        <div class="historial">
+            <h3>Historial de lanzamientos</h3>
+            <div id="historialLista"></div>
+            <button id="btnExportar">Exportar historial a TXT</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        Hecho con 🎲 por Luis Esteban •
+        <a href="https://www.linkedin.com/in/luis-chanocua" target="_blank">LinkedIn</a>
+    </footer>
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>
